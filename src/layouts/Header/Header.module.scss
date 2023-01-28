@@ -1,0 +1,39 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 150;
+
+  transform: translateY(-100%);
+
+  padding: 15px 0;
+  width: 100%;
+
+  background-color: var(--main-color);
+  transition: transform 0.4s ease;
+
+  @media (max-width: 540px) {
+    padding: 5px 0;
+  }
+}
+
+.visible {
+  transform: translateY(0%);
+}
+
+.Body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  img {
+    width: 218px;
+    height: 33px;
+
+    @media (max-width: 540px) {
+      width: 150px;
+    }
+  }
+}

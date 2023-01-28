@@ -1,0 +1,23 @@
+.fade-in {
+  &-enter {
+    opacity: 0;
+
+    &-active {
+      opacity: 0.5;
+      transition: opacity 0.5s ease;
+    }
+
+    &-done {
+      opacity: 0.5;
+    }
+  }
+
+  &-exit {
+    opacity: 0.5;
+
+    &-active {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+  }
+}
