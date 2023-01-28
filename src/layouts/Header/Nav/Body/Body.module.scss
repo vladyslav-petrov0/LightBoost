@@ -1,0 +1,78 @@
+.Nav {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 920px) {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    height: 100vh;
+    padding: 80px 20px 0 20px;
+
+    background-color: var(--sec-color);
+  }
+}
+
+.Link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+
+  color: var(--add-color1);
+
+  transition: color 0.1s ease;
+
+  &:hover {
+    color: var(--add-color2);
+  }
+
+  @media (max-width: 920px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 540px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.List {
+  display: flex;
+
+  @media (max-width: 920px) {
+    flex-direction: column;
+  }
+}
+
+.ListItem {
+  margin-right: 47px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 920px) {
+    margin: 0 0 15px 0;
+  }
+}
+
+.MainList {
+  @media (min-width: 921px) {
+    margin-right: clamp(50px, -436.29px + 52.86vw, 198px);
+  }
+}
+
+.AccountItem {
+  margin-right: 38px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 920px) {
+    margin: 0 0 15px 0;
+  }
+}
