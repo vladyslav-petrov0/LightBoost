@@ -1,7 +1,3 @@
-import { rest } from 'msw';
+import { introHandler } from './handlers/intro/introHandler.js';
 
-export const handlers = [
-  rest.get('/login', (req, res, ctx) => {
-    return res(ctx.status(200));
-  })
-];
+export const handlers = [introHandler()];

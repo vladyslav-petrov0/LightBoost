@@ -1,0 +1,10 @@
+@import '../../../utils/scss/funcs';
+
+.Text {
+  font-weight: 500;
+  font-size: clamp-calc(320px, 1200px, 12px, 16px);
+  line-height: 23px;
+
+  color: var(--add-color1);
+  text-align: left;
+}

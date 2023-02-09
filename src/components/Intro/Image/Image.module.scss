@@ -1,0 +1,52 @@
+.ImageWrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  height: 100%;
+
+  @media (max-width: 1000px) {
+    position: relative;
+    height: 457px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 720px) {
+    height: 393px;
+  }
+  @media (max-width: 540px) {
+    height: 328px;
+  }
+}
+
+.Spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.Image {
+  position: absolute;
+  top: 5%;
+  right: 0;
+
+  z-index: 10;
+
+  opacity: 0;
+
+  @media (max-width: 1100px) {
+    top: 20%;
+    right: 10%;
+    max-width: 450px;
+  }
+
+  @media (max-width: 1000px) {
+    position: static;
+
+    height: 100%;
+  }
+}

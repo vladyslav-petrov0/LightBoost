@@ -1,0 +1,36 @@
+@import '../../../utils/scss/funcs.scss';
+
+.Title {
+  text-transform: uppercase;
+  font-weight: bold;
+
+  line-height: 102.4%;
+}
+
+.lg {
+  font-size: clamp-calc(320px, 1280px, 30px, 60px);
+}
+
+.xl {
+  font-size: clamp-calc(320px, 1280px, 30px, 80px);
+}
+
+.rg {
+  font-size: clamp-calc(320px, 1280px, 30px, 40px);
+}
+
+.sm {
+  font-size: clamp-calc(320px, 1280px, 25px, 36px);
+}
+
+.xs {
+  font-size: clamp-calc(320px, 1280px, 20px, 30px);
+}
+
+.black {
+  color: var(--add-color1);
+}
+
+.white {
+  color: var(--add-color2);
+}

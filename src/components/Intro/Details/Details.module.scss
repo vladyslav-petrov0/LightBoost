@@ -1,0 +1,53 @@
+@import '../../../utils/scss/funcs';
+
+.Details {
+  z-index: 10;
+
+  @media (max-width: 1000px) {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.Title {
+  margin-bottom: 23px;
+  max-width: 555px;
+
+  @media (max-width: 768px) {
+    max-width: 350px;
+  }
+  @media (max-width: 420px) {
+    max-width: 250px;
+  }
+}
+
+.Text {
+  max-width: 447px;
+  margin-bottom: 34px;
+
+  font-weight: 400;
+  font-size: clamp-calc(320px, 1200px, 16px, 18px);
+  line-height: 22px;
+
+  color: #1f271b;
+
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
+}
+
+.Button {
+  font: normal 16px/20px;
+  text-transform: uppercase;
+
+  max-width: 147px;
+
+  padding: 14px 30px;
+
+  @media (max-width: 540px) {
+    padding: 10px 20px;
+  }
+}

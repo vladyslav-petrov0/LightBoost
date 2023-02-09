@@ -1,0 +1,39 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.Icon {
+  margin-bottom: 10px;
+
+  @media (max-width: 540px) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.Title {
+  max-width: 250px;
+
+  margin-bottom: 15px;
+}
+
+.Text {
+  max-width: 380px;
+
+  margin-bottom: 10px;
+}
+
+.Button {
+  padding: 10px 20px;
+}
+
+.Text,
+.Title {
+  text-align: center;
+}

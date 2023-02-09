@@ -1,0 +1,31 @@
+.Buttons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 15;
+
+  transform: translateX(-50%);
+
+  display: flex;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 66px;
+  height: 66px;
+
+  background-color: var(--main-color);
+  cursor: pointer;
+
+  &:last-child {
+    transform: rotate(180deg);
+  }
+
+  @media (max-width: 540px) {
+    width: 44px;
+    height: 44px;
+  }
+}

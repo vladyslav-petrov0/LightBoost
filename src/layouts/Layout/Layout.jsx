@@ -11,6 +11,7 @@ const Layout = () => {
   return (
     <>
       <Header />
+      <div className={styles.HeaderPlaceholder}></div>
       <Outlet />
       <Footer />
     </>

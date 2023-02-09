@@ -1,0 +1,27 @@
+.Button {
+  display: flex;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.outlined {
+  color: var(--add-color1);
+  border: 2px solid #f4b02b;
+}
+
+.contained {
+  background-color: var(--main-color);
+  color: var(--add-color2);
+}
+
+.blured {
+  background-color: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.inactive {
+  color: var(--add-color1);
+  background-color: rgba(244, 176, 43, 0.12);
+}

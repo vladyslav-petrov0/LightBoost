@@ -1,0 +1,7 @@
+.HeaderPlaceholder {
+  height: 66px;
+
+  @media (max-width: 540px) {
+    height: 46px;
+  }
+}
