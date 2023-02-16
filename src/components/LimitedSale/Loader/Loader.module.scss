@@ -1,0 +1,21 @@
+.Loader {
+  min-height: 650px;
+  height: 1px;
+
+  padding: 54px 0;
+
+  @media (max-width: 1024px) {
+    min-height: 587px;
+  }
+}
+
+.SkeletonContainer {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+}
+
+.Container {
+  height: 100%;
+}

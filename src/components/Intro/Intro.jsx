@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
+import { string } from 'prop-types';
 import { useService, useFetch, useLooped, useOnScreen } from '../../hooks';
+import cn from 'classnames';
 
 import Container from '../ui/Container';
 
@@ -11,7 +13,7 @@ import IntroError from './Error';
 
 import styles from './Intro.module.scss';
 
-const Intro = () => {
+const Intro = ({ className }) => {
   const service = useService();
   const { data: items = [], loading, error, refetch } = useFetch(service.getIntroItems);
   const [currentItemId, setCurrentItemId] = useState(0);
@@ -40,8 +42,10 @@ const Intro = () => {
 
   const item = items[currentItemId];
 
+  const classes = cn(styles.Intro, className);
+
   return (
-    <div className={styles.Intro} ref={ref}>
+    <div className={classes} ref={ref}>
       {loading ? (
         <IntroLoader />
       ) : error ? (
@@ -58,6 +62,14 @@ const Intro = () => {
       )}
     </div>
   );
+};
+
+Intro.propTypes = {
+  className: string
+};
+
+Intro.defaultProps = {
+  className: ''
 };
 
 export default Intro;

@@ -1,21 +1,16 @@
 import React from 'react';
-import { func } from 'prop-types';
 
 import Container from '../../ui/Container';
 import ErrorMessage from '../../ui/ErrorMessage';
 
 import styles from './Error.module.scss';
 
-const IntroError = ({ refresh }) => {
+const LimitedSaleError = ({ ...props }) => {
   return (
     <Container className={styles.Container}>
-      <ErrorMessage refresh={refresh} />
+      <ErrorMessage {...props} />
     </Container>
   );
 };
 
-IntroError.propTypes = {
-  refresh: func.isRequired
-};
-
-export default IntroError;
+export default LimitedSaleError;

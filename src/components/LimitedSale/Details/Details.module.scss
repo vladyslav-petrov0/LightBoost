@@ -1,0 +1,81 @@
+.Details {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--add-color2);
+
+  @media (max-width: 880px) {
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 30px;
+  }
+}
+
+.Title {
+  max-width: 466px;
+  margin-bottom: 18px;
+
+  @media (max-width: 540px) {
+    padding: 0 40px;
+  }
+}
+
+.Subtitle {
+  font: bold 16px/102.4% 'Montserrat';
+  margin-bottom: 14px;
+}
+
+.Description {
+  font: 500 20px/102.4% 'Montserrat';
+  @media (max-width: 880px) {
+    margin-bottom: 30px;
+  }
+}
+
+.Price {
+  font-weight: bold;
+  line-height: 102.4%;
+
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.08);
+}
+
+.orange {
+  color: var(--main-color);
+}
+
+.old {
+  font-size: 45px;
+  text-decoration: line-through;
+
+  color: #cbcbcb;
+
+  margin: auto 0 18px 0;
+
+  @media (max-width: 880px) {
+    margin-bottom: 10px;
+  }
+  @media (max-width: 720px) {
+    font-size: 35px;
+  }
+  @media (max-width: 540px) {
+    font-size: 35px;
+  }
+  @media (max-width: 420px) {
+    font-size: 30px;
+  }
+}
+
+.new {
+  font-size: 77px;
+
+  @media (max-width: 720px) {
+    font-size: 60px;
+  }
+  @media (max-width: 540px) {
+    font-size: 50px;
+  }
+  @media (max-width: 420px) {
+    font-size: 40px;
+  }
+}
